@@ -1,13 +1,26 @@
 # Resolution d'une systeme d'equation d'ordre N en C++
+ 
+ le programme consiste a trouver la solution d'une systeme d'equation donne par l'utlisateur 
+ 
+ ##comment l'employer
+ et bien ,il suffit de mettre les coefficient de chaque equation du systeme avec le bon ordre dans un fichier texte,que l'on peut facilement cree dans notre dossier sur ordinateur ,
+ puis de glisser le programme sur le meme dossier que ce dernier
+ et ensuite on execute le programme
+ 
+ ##comment interagit le programme
+ lors de l'execution du programme , il vous demandera la dimension ;c'est a dire le nombre d'equation dans le systeme a resoudre
+ puis ensuite le nom du fichier texte contenant les  coefficients 
+ et le procesus continuera et affichera la solution $$ x = [X~1~,X~2~,...,X~n~] $$
+ 
+
+
 
 ##Recuperation des donnees a partir d'un fichier texte
 
+En utilisant la bibliotheque $$ fstream $$ de C++
+
 
 ##Diagonalisation de la Matrice,echellonnage par le pivot de GAUSS
-
-
-##Affichage du resultat ou d'une erreur si la solution est vide
-<kbd>Alt</kbd>
 
  
  $$ A(X)=B $$
@@ -61,7 +74,8 @@ B~n~
 \end{array}\right\) 
 $$
 
-
+##Affichage du resultat ou d'une erreur si la solution est vide
+<kbd>Alt</kbd>
 
 voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
 
