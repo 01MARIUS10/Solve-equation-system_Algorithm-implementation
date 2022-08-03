@@ -36,8 +36,8 @@ Bn
 \end{array}\right\) $$
 
 avec :
-$$ 
-A = \left(\begin{array}
+
+$$ A = \left(\begin{array}
 a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 ... & ... & a3  & ... & an \\
