@@ -147,7 +147,6 @@ pivoter ligne par ligne avec le pivot du  1e colonne <br>
 0       0       -10.9091        -1.09091                        -10.0909 <br>
 ---------------------------------------------------
 ```
- 
 
 ```
 while(i<dim && isInversible){
@@ -175,18 +174,12 @@ Deux cas peuvent se produire lors de la diagonalisation :<br>
     c'est l'importance du booleen **isInversible** <br>
     comme son nom l'indique , si isInversible est false ; alors on affichera que l'on aurait pas de solution <br>
     il precisera en plus quel colonne etait le probleme(le fameux combinaison des autres colonnes)
-    
- 
     ```
     if(!isInversible){
         cout<<"la matrice n'est pas inversible , la colonne "<<indexPivot+1<<" est une combinaison des autres colonnes"<<endl<<endl;
     }
     ```
-    
-
     si parcontre isInversible est true , alors on procede a l'algorithme ci dessous et obtenir la solution du systeme.<br>
-    
-    
     ```
     else{
         cout<<endl<<endl<<"Echellonage fini ;"<<endl;
