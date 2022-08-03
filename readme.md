@@ -30,7 +30,7 @@ Xk  \\
 Xn
 \end{array}\right\)
 
-et
+$$ et $$
 
 B = \left(\begin{array}
 B1  \\
