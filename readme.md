@@ -1,5 +1,7 @@
 <!--  title: Resolution d'unr systeme d'equation en C++ -->
  <!-- title: Your Title --> 
+ 
+ $$ A(X)=B $$
 
 voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
 
