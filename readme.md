@@ -35,7 +35,8 @@ Bk  \\
 Bn
 \end{array}\right\) $$
 
-avec : $$ A = \left(\begin{array}
+avec : 
+$$ A = \left(\begin{array}
 a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 ... & ... & a3  & ... & an \\
