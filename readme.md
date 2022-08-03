@@ -110,7 +110,7 @@ puis on procede a l'algorithme de gauss comme ci dessous a la matrice **A** et a
 
 <img src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/tri.PNG"
      alt="Algorithme de Gauss"
-     style=" margin:auto;height:500px;width:80%;" />
+     style=" margin:auto;height:300px;width:80%;" />
 
 afin de verifier le cas ou une colonne n'est lineairement independant , on choisira comme pivot le max de chaque colonne<br>
 
