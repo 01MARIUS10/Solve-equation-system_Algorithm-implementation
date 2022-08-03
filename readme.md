@@ -1,5 +1,12 @@
-<!--  title: Resolution d'unr systeme d'equation en C++ -->
- <!-- title: Your Title --> 
+# Resolution d'une systeme d'equation d'ordre N en C++
+
+##Recuperation des donnees a partir d'un fichier texte
+
+
+##Diagonalisation de la Matrice,echellonnage par le pivot de GAUSS
+
+
+##Affichage du resultat ou d'une erreur si la solution est vide
  
  $$ A(X)=B $$
 
