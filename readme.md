@@ -19,20 +19,18 @@ a1  & ... & a3  & ... & an \\
 ... & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 an  & ... & ... & ... & an 
-\end{array}\right\) $$
+\end{array}\right\) 
 
  
-$$ X = \left(\begin{array}
+ X = \left(\begin{array}
 X1  \\
 ... \\
 Xk  \\
 ... \\
 Xn
-\end{array}\right\) $$ 
+\end{array}\right\) 
 
-et 
-
-$$ B = \left(\begin{array}
+ B = \left(\begin{array}
 B1  \\
 ... \\
 Bk  \\
