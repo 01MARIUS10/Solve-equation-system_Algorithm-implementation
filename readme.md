@@ -1,4 +1,5 @@
 <!--  title: Resolution d'unr systeme d'equation en C++ -->
+ <!-- title: Your Title --> 
 
 voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
 
