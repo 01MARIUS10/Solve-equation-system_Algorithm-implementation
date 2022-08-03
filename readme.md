@@ -3,23 +3,53 @@
  le programme consiste a trouver la solution d'une systeme d'equation donne par l'utlisateur 
  
  comment l'employer
- =======================
+ -------------------
  et bien ,il suffit de mettre les coefficient de chaque equation du systeme avec le bon ordre dans un fichier texte,que l'on peut facilement cree dans notre dossier sur ordinateur ,
  puis de glisser le programme sur le meme dossier que ce dernier
  et ensuite on execute le programme
  
  comment interagit le programme
- ==================================
+----------------------------------
  lors de l'execution du programme , il vous demandera la dimension ;c'est a dire le nombre d'equation dans le systeme a resoudre
  puis ensuite le nom du fichier texte contenant les  coefficients 
- et le procesus continuera et affichera la solution $$ x = (X~1~,X~2~,...,X~n~) $$
+ et le ***procesus*** continuera et affichera la solution $$ x = (X~1~,X~2~,...,X~n~) $$
  
 
+Entrons plutot dans le detail de ce ***processus***
+------------------------------------------------------
+ce processus contient 3etapes : 
 
+1.Recuperation des donnees a partir d'un fichier texte
+Apres avoir entrer le nom du fichier et le nombre d'equation (Mathematiquement la dimension de la Matrice),
+le <br> programme va inserer chaque valeur du fichier dans l'ordre respective dans une matrice (Manipulable) en utilisant la bibliotheque $$ fstream $$ de C++.
 
-##Recuperation des donnees a partir d'un fichier texte
-
-En utilisant la bibliotheque $$ fstream $$ de C++
+```
+void getvalueTotxt(string filename ,vector<vector<double> >&Mat,vector<double> &a ,int dim){
+    double b;
+    vector<double> tmp;
+    ifstream f (filename);
+    if (!f.is_open())
+        cout << "Impossible d'ouvrir le fichier en lecture !" << endl;
+    else
+    {
+        for (int i = 0; i < dim; i++){
+            for(int j=0;j<dim;j++){
+                f >> b;
+                tmp.push_back(b);
+                b=0;
+            }
+            Mat.push_back(tmp);
+            tmp.clear();
+        }
+        for(int i = 0; i < dim; i++){
+            f >> b;
+            a.push_back(b);
+            b=0;
+        }
+    }
+    f.close();
+}
+```
 
 
 ##Diagonalisation de la Matrice,echellonnage par le pivot de GAUSS
