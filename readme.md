@@ -14,50 +14,50 @@
  
  $$ 
 \left(\begin{array}
-a1~j~  & ... & a3~j~  & ... & an \\
-... & ... & ... & ... & ...\\
-... & ... & a3  & ... & an \\
-... & ... & ... & ... & ...\\
-an  & ... & ... & ... & an 
+A~1~1~  & ... & A~1~j~  & ... & A~1~n~ \\
+...     & ... & ...     & ... & ...    \\
+...     & ... & A~i~j~  & ... & A~i~n~ \\
+...     & ... & ...     & ... & ...    \\
+A~n~1~  & ... & ...     & ... & A~n~n~ 
 \end{array}\right\)  
 . \left(\begin{array}
-X1  \\
+X~1~  \\
 ... \\
-Xk  \\
+X~k~  \\
 ... \\
-Xn
+X~n~
 \end{array}\right\) 
 = \left(\begin{array}
-B1  \\
+B~1~  \\
 ... \\
-Bk  \\
+B~k~  \\
 ... \\
-Bn
+B~n~
 \end{array}\right\) $$
 
 avec : 
 
 $$ 
-A = \left(\begin{array}
-a1  & ... & a3  & ... & an \\
-... & ... & ... & ... & ...\\
-... & ... & a3  & ... & an \\
-... & ... & ... & ... & ...\\
-an  & ... & ... & ... & an 
-\end{array}\right\)
+A =\left(\begin{array}
+A~1~1~  & ... & A~1~j~  & ... & A~1~n~ \\
+...     & ... & ...     & ... & ...    \\
+...     & ... & A~i~j~  & ... & A~i~n~ \\
+...     & ... & ...     & ... & ...    \\
+A~n~1~  & ... & ...     & ... & A~n~n~ 
+\end{array}\right\)  
 X = \left(\begin{array}
-X1  \\
+X~1~  \\
 ... \\
-Xk  \\
+X~k~  \\
 ... \\
-Xn
+X~n~
 \end{array}\right\) 
 B = \left(\begin{array}
-B1  \\
+B~1~  \\
 ... \\
-Bk  \\
+B~k~  \\
 ... \\
-Bn
+B~n~
 \end{array}\right\) 
 $$
 
