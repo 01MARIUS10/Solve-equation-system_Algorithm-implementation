@@ -108,7 +108,7 @@ $$
 
 puis on procede a l'algorithme de gauss comme ci dessous a la matrice **A** et aussi **B** en parallele<br>
 
-<img src="[markdownmonstericon.png](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/tri.PNG)"
+<img src="https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/tri.PNG"
      alt="Algorithme de Gauss"
      style=" margin-right: 10px;height:300px;" />
      
