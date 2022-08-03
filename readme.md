@@ -36,6 +36,7 @@ Bn
 \end{array}\right\) $$
 
 avec : 
+
 $$ 
 A = \left(\begin{array}
 a1  & ... & a3  & ... & an \\
