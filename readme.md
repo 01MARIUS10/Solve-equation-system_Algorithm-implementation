@@ -7,8 +7,20 @@
 
 
 ##Affichage du resultat ou d'une erreur si la solution est vide
+
+
  
  $$ A(X)=B $$
+ 
+ 
+ $$ A = \left(\begin{array}
+a1  & ... & a3  & ... & an \\
+... & ... & ... & ... & ...\\
+... & ... & a3  & ... & an \\
+... & ... & ... & ... & ...\\
+an  & ... & ... & ... & an 
+\end{array}\right\)
+$$
 
 voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
 
