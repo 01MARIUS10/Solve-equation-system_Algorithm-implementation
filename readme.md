@@ -7,11 +7,10 @@
 
 
 ##Affichage du resultat ou d'une erreur si la solution est vide
-
+<kbd>Alt</kbd>
 
  
  $$ A(X)=B $$
- 
  
  $$ 
 A = \left(\begin{array}
@@ -45,14 +44,14 @@ a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 an  & ... & ... & ... & an 
 \end{array}\right\)  
-     X  \left(\begin{array}
+ X = \left(\begin{array}
 X1  \\
 ... \\
 Xk  \\
 ... \\
 Xn
 \end{array}\right\) 
-et B = \left(\begin{array}
+ B = \left(\begin{array}
 B1  \\
 ... \\
 Bk  \\
