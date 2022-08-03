@@ -13,7 +13,7 @@
  $$ A(X)=B $$
  
  $$ 
-A = \left(\begin{array}
+\left(\begin{array}
 a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 ... & ... & a3  & ... & an \\
@@ -36,22 +36,20 @@ Bn
 \end{array}\right\) $$
 
 avec :
- $$ 
+$$ 
 A = \left(\begin{array}
 a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 ... & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 an  & ... & ... & ... & an 
-\end{array}\right\)  
- X = \left(\begin{array}
+\end{array}\right\)       X = \left(\begin{array}
 X1  \\
 ... \\
 Xk  \\
 ... \\
 Xn
-\end{array}\right\) 
- B = \left(\begin{array}
+\end{array}\right\)       B = \left(\begin{array}
 B1  \\
 ... \\
 Bk  \\
