@@ -20,7 +20,7 @@ Entrons plutot dans le detail de ce ***processus***
 ------------------------------------------------------
 ce processus contient 3etapes : <br>
 
-***1.Recuperation des donnees a partir d'un fichier texte***
+***1.Recuperation des donnees a partir d'un fichier texte***<br>
 Apres avoir entrer le nom du fichier et le nombre d'equation (Mathematiquement la dimension de la Matrice),<br>
 le  programme va inserer chaque valeur du fichier dans l'ordre respective dans une matrice (Manipulable) en utilisant la bibliotheque ** fstream ** de C++.
 
@@ -52,8 +52,7 @@ void getvalueTotxt(string filename ,vector<vector<double> >&Mat,vector<double> &
 }
 ```
 
-
-##Diagonalisation de la Matrice,echellonnage par le pivot de GAUSS
+***2.Diagonalisation de la Matrice,echellonnage par le pivot de GAUSS***<br>
 
  
  $$ A(X)=B $$
@@ -107,25 +106,71 @@ B~n~
 \end{array}\right\) 
 $$
 
-##Affichage du resultat ou d'une erreur si la solution est vide
-<kbd>Alt</kbd>
 
-voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
+```
+while(i<dim && isInversible){
+        cout<<endl<<endl<<"----------------"<<i<<"eme colonne----------------";
+        
+        //on cherche le max pour chaque colonne et on le prend comme pivot
+        indexPivot=indexMaxOfColumn(Matrice,i,isInversible);
 
-le projet contient tout d'abord aux entete,les directives de precompilation ;
-toutes les bibliotheques ,dependances du programme
+        //on le fait monter au {colonne}ieme ligne, cad a la diagonale
+        swapLineMatrice(i,indexPivot,Matrice,b);
+        
+        //on le pivote ,cad rendre les elements de la ligne zero 
+        pivoter(i,Matrice,b);
 
-et ensuite on y trouve des fonctions pour des test unitaires ,notament les display fonction pour afficher nos matrice et vecteur tout au long de notre script en cas de necessite
+        //et on incremente
+        i++;
+    }
+```
+
+***3.Resultat finale***<br>
+Deux cas peuvent se produire lors de la diagonalisation :<br>
+    >soit l'echelonnage s'est terminer jusque a la fin,c'est a dire *n*ieme colonne
+    >soit on a pu trouver lors du parcours de chaque colonne une colonne lie au autre,c'est a dire qu'il peuvent s'exprimer comme combinaison lineaire des colonnes deja parcouru par la boucle<br>et par le theoreme de l'**Algebre **,la matrice compose de vecteur colonne lie n'est pas inversible ,donc pas de solution pour notre systeme
+
+    c'est l'importance du booleen **isInversible** <br>
+    comme son nom l'indique , si isInversible est false ; alors on affichera que l'on aurait pas de solution <br>il precisera en plus quel colonne etait le probleme(le fameux combinaison des autres colonnes)<br>
+    
+    ```
+    if(!isInversible){
+        cout<<"la matrice n'est pas inversible , la colonne "<<indexPivot+1<<" est une combinaison des autres colonnes"<<endl<<endl;
+    }
+    ```
+    <br><br>
+
+    si parcontre isInversible est true , alors on procede a l'algorithme ci dessous et obtenir la solution du systeme.<br>
+    ```
+    else{
+        cout<<endl<<endl<<"Echellonage fini ;"<<endl;
+        cout<<"go resolve the value"<<endl;
+        vector<double> X;
+
+        //on itere du bas vers le haut
+        for(int i=dim-1;i>=0;i--){
+            int j=dim-1;
+            int k=0;
+            double scalaire=0;
+            //et de la fin vers le debut
+            while(j>i){
+                //la variable scalaire est une produit scalaire du resultat deja trouve X[k] 
+                //et des element non vide de la matrice a la ligne iterer
+                scalaire+=Matrice[i][j]*X[k];
+                j--;
+                k++;
+            }
+            //on obtient le resultat inversement, cad pas (x1,x2,...xN) mais (xN,....,x2,x1)
+            //on l'obtient et le stock a chaque iteration de ligne 
+            X.push_back((b[i]-scalaire)/Matrice[i][i]);
+        }
+        //on inverse pour obtenir le resultat dans le bon ordre 
+        X=inverserVector(X);
+
+        //affichage du resultat
+        cout<< "le resultat est :" <<endl;
+        displayVector(X);
+    }
+    ```
 
 
-rentrons au programme lui meme.Comment fonctionne le programme!
-le programme se divise en 3etapes :
-1)receuil des donne brute sur .txt 
-2)diagonalisation de la matrice
-3)resolution et Affichage du resultat ou de l'echec en cas ou la solution est vide(matrice non diagonalisable)
-
-il vous suffit donc de rentrer dans le fichier .txt dans l'ordre respective les valeur de la matrice et du vecteur de second membre
-
-le programme demandera a l'utilisateur le nom du fichier et la taile de la matrice a traiter
-il receuillera lui meme ses donne et affiche les demarche de diagonalisation ainsi que le resultat s'il existe
-elle affichera une message d'erreur au cas ou la matrice n'est pas inversible
