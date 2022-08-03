@@ -118,9 +118,9 @@ dans la partie code ,on a ajouter le boolean isInversible pour arreter au cas ou
 
 <strong>A noter que</strong> a chaque iteration (chaque colonne) , le programme affichera le maximum de la colonne,son index,
  ```
----------le Max dans la column 1 est : -----------------
-max  = 2
-indexMax  = 1
+---------le Max dans la column 1 est : -----------------<br>
+max  = 2 <br>
+indexMax  = 1 <br>
  ```
  <strong>et puis aussi </strong>  apres avoir localiser le pivot choisi(selon le max),on le rend a la ligne coorespondante <br>
  ce qui s'affiche comme suit 
@@ -129,23 +129,24 @@ indexMax  = 1
  ```
  puis afficher l'equation apres modification<br>
  ```
- -------AFFICHAGE DE L' EQUATION'----------
-3       7       2       3                       6
-0       2       10      0                       9
-0       -2      3       1                       1
-0       -5.5    2.5     3                       3
+ -------AFFICHAGE DE L' EQUATION'---------- <br>
+3       7       2       3                       6 <br>
+0       2       10      0                       9 <br>
+0       -2      3       1                       1 <br>
+0       -5.5    2.5     3                       3 <br>
 ----------------------------------------
+```
 
 et une derniere affichage ,l'equation apres le pivot de gauss (remarque que les valeurs en desous du pivot deviennent null<br>
 ```
-pivoter ligne par ligne avec le pivot du  1e colonne
--------AFFICHAGE DE L' EQUATION'----------
-3       7       2       3                       6
-0       2       10      0                       9
-0       0       -13     -1                      -10
-0       0       -10.9091        -1.09091                        -10.0909
+pivoter ligne par ligne avec le pivot du  1e colonne <br>
+-------AFFICHAGE DE L' EQUATION'---------- <br>
+3       7       2       3                       6 <br>
+0       2       10      0                       9 <br>
+0       0       -13     -1                      -10 <br>
+0       0       -10.9091        -1.09091                        -10.0909 <br>
+---------------------------------------------------
 ```
- ```
  
 
 ```
