@@ -106,6 +106,11 @@ B~n~
 \end{array}\right\) 
 $$
 
+puis on procede a l'algorithme de gauss comme ci dessous a la matrice **A** et aussi **B** en parallele<br>
+
+![Ceci est un exemple d’image]([https://example.com/bild.jpg](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/tri.PNG))
+
+dans la partie code ,on a ajouter le boolean isInversible pour arreter au cas ou une colonne n'est lineairement independant,c'est a dire si les valeurs en dessous du pivot valent tous zero .
 
 ```
 while(i<dim && isInversible){
