@@ -133,16 +133,18 @@ Deux cas peuvent se produire lors de la diagonalisation :<br>
     c'est l'importance du booleen **isInversible** <br>
     comme son nom l'indique , si isInversible est false ; alors on affichera que l'on aurait pas de solution <br>il precisera en plus quel colonne etait le probleme(le fameux combinaison des autres colonnes)<br>
     
-    ```
-    if(!isInversible){
+ 
+    ```if(!isInversible){
         cout<<"la matrice n'est pas inversible , la colonne "<<indexPivot+1<<" est une combinaison des autres colonnes"<<endl<<endl;
-    }
-    ```
-    <br><br>
+    }```
+    
+    <br>
+    <br>
 
     si parcontre isInversible est true , alors on procede a l'algorithme ci dessous et obtenir la solution du systeme.<br>
-    ```
-    else{
+    
+    
+    ```else{
         cout<<endl<<endl<<"Echellonage fini ;"<<endl;
         cout<<"go resolve the value"<<endl;
         vector<double> X;
@@ -170,7 +172,6 @@ Deux cas peuvent se produire lors de la diagonalisation :<br>
         //affichage du resultat
         cout<< "le resultat est :" <<endl;
         displayVector(X);
-    }
-    ```
+    }```
 
 
