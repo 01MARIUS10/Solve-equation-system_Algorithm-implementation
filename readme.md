@@ -183,7 +183,6 @@ Deux cas peuvent se produire lors de la diagonalisation :<br>
     }
     ```
     
-    <br>
 
     si parcontre isInversible est true , alors on procede a l'algorithme ci dessous et obtenir la solution du systeme.<br>
     
