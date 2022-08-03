@@ -4,9 +4,10 @@
  
  comment l'employer
  -------------------
- et bien ,il suffit de mettre les coefficient de chaque equation du systeme avec le bon ordre dans un fichier texte,que l'on peut facilement cree dans notre dossier sur ordinateur ,
+ et bien ,il suffit de mettre les coefficient de chaque equation du systeme avec le bon ordre dans un fichier texte,
+ que l'on peut facilement cree dans notre dossier sur ordinateur ,<br>
  puis de glisser le programme sur le meme dossier que ce dernier
- et ensuite on execute le programme
+ et ensuite on execute le programme.
  
  comment interagit le programme
 ----------------------------------
@@ -17,11 +18,11 @@
 
 Entrons plutot dans le detail de ce ***processus***
 ------------------------------------------------------
-ce processus contient 3etapes : 
+ce processus contient 3etapes : <br>
 
-1.Recuperation des donnees a partir d'un fichier texte
-Apres avoir entrer le nom du fichier et le nombre d'equation (Mathematiquement la dimension de la Matrice),
-le <br> programme va inserer chaque valeur du fichier dans l'ordre respective dans une matrice (Manipulable) en utilisant la bibliotheque $$ fstream $$ de C++.
+***1.Recuperation des donnees a partir d'un fichier texte***
+Apres avoir entrer le nom du fichier et le nombre d'equation (Mathematiquement la dimension de la Matrice),<br>
+le  programme va inserer chaque valeur du fichier dans l'ordre respective dans une matrice (Manipulable) en utilisant la bibliotheque ** fstream ** de C++.
 
 ```
 void getvalueTotxt(string filename ,vector<vector<double> >&Mat,vector<double> &a ,int dim){
