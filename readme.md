@@ -20,6 +20,27 @@ a1  & ... & a3  & ... & an \\
 ... & ... & ... & ... & ...\\
 an  & ... & ... & ... & an 
 \end{array}\right\)
+
+ 
+X = \left(\begin{array}
+X1  \\
+... \\
+Xk  \\
+... \\
+Xn
+\end{array}\right\)
+
+et
+
+B = \left(\begin{array}
+B1  \\
+... \\
+Bk  \\
+... \\
+Bn
+\end{array}\right\)
+
+
 $$
 
 voici un programme concu pour pouvoir resoudre une systeme d'equation d'ordre n(reel) en c plus plus
