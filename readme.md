@@ -127,8 +127,8 @@ while(i<dim && isInversible){
 
 ***3.Resultat finale***<br>
 Deux cas peuvent se produire lors de la diagonalisation :<br>
-    >soit l'echelonnage s'est terminer jusque a la fin,c'est a dire *n*ieme colonne<br>
-    >soit on a pu trouver lors du parcours de chaque colonne une colonne lie au autre,c'est a dire qu'il peuvent s'exprimer comme combinaison lineaire des colonnes deja parcouru par la boucle<br>et par le theoreme de l'**Algebre **,la matrice compose de vecteur colonne lie n'est pas inversible ,donc pas de solution pour notre systeme
+    >soit l'echelonnage s'est terminer jusque a la fin,c'est a dire **n**ieme colonne<br>
+    >soit on a pu trouver lors du parcours de chaque colonne une colonne lie au autre,c'est a dire qu'il peuvent s'exprimer comme combinaison lineaire des colonnes deja parcouru par la boucle<br>et par le theoreme de l' __Algebre__ ,la matrice compose de vecteur colonne lie n'est pas inversible ,donc pas de solution pour notre systeme
 
     >c'est l'importance du booleen **isInversible** <br>
     comme son nom l'indique , si isInversible est false ; alors on affichera que l'on aurait pas de solution <br>
